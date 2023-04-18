@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Prallax Scrolling Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header> 
+            <a href="#" class="logo"><img src="C:\Users\akush\Desktop\Safer Travels Final Run\Code\Landing Page\White final.png" alt="Logo" width="90" height="150"></a>
+
+            <ul>
+                <li><a href="#" id="moto" class="active">Safe</a></li>
+                <li><a href="#" id="moto">and</a></li> 
+                <li><a href="#" id="moto">Sound</a></li>
+                <li><a href="#" id="moto">The</a></li>
+                <li><a href="#" id="moto">Secure</a></li>
+                <li><a href="#" id="moto">Path </a></li>
+                <li><a href="#" id="moto">Found</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="images/stars.png" id="stars">
+            <img src="images/moon.png" id="moon">
+            <img src="images/topcloud.png" id="topcloud">
+            <img src="images/leftcloud.png" id="leftcloud">
+            <img src="images/rightcloud.png" id="rightcloud">
+            <img src="images/sea_behind.png" id="sea_behind">   
+            <h2 id="text">Safer</h2>
+            <h3 id="text2">Travel</h3>
+            <a href="C:\Users\akush\Desktop\Safer Travels Final Run\Code\code\map.html" id="btn">Crime Statistics</a>
+            <a href="#" onclick="getLocation()" id="btn2">Alert Contacts!</a>
+            <a href="C:\Users\akush\Desktop\Safer Travels Final Run\Code\Path Ml algo\MapAndLoc.html" id="btn3">Secure WayFinder</a>
+
+            <script>
+                function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+                }
+    
+                function showPosition(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                var phoneNumber = "919541811502"; // replace with the WhatsApp phone number you want to share your location with
+                var message = "HELP ME!! I AM HERE: https://www.google.com/maps/search/?api=1&query=12.8249862,80.0449666";
+                var encodedMessage = encodeURIComponent(message);
+                var link = "https://wa.me/" + phoneNumber + "/?text=" + encodedMessage;
+                window.open(link);
+                }
+            </script>
+            
+            <img src="images/sea_front.png" id="sea_front">
+            
+        </section>
+        <div class="sec" id="sec">
+            <h2>Safest Routing Algorithm</h2>
+            <p>	Problem Statement - The problem is finding the safest and shortest route from point A to point B, in order to produce a path safe in their daily mobility around the city.<br>
+                Idea - The Smart Routing Application suggests safe spots to wait or stay in case of high crime times or unfavorable conditions, 
+                and provides nearby police station locations and contact numbers. It also suggests the safest and most secure route that 
+                avoids high-crime regions, taking into account weather and traffic conditions. The application provides a crime factor score 
+                and a weather and traffic factor score for the chosen route, ensuring that users stay safe and secure while traveling. 
+                Additionally, the application includes a panic button feature that, when pressed, alerts the user's chosen contacts with 
+                notifications and live location updates.<br>
+                Design - The Smart Routing Application uses web scraping and machine learning algorithms to collect and analyze 
+                crime data from multiple sources. To execute the solution to the problem, the Dijkstra's algorithm and Floyd Warshal 
+                are used to find the shortest and safest path from the starting point to the destination. The algorithm runs through 
+                all the weight graph, trying not to pass through a visited vertex, and finishes when all the vertices are visited.
+                
+            </p>
+        </div>
+        
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let topcloud = document.getElementById('topcloud');
+            let leftcloud = document.getElementById('leftcloud');
+            let rightcloud = document.getElementById('rightcloud');
+            let sea_behind = document.getElementById('sea_behind');
+            let text = document.getElementById('text');
+            let text2 = document.getElementById('text2');
+            let btn = document.getElementById('btn');
+            let sea_front = document.getElementById('sea_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                
+                stars.style.left = value * 0.5 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                sea_behind.style.top = value * 0.5 + 'px';
+                topcloud.style.top = value * -0.25 + 'px';
+                leftcloud.style.marginLeft = value * -0.25 + 'px';
+                rightcloud.style.marginLeft = value * 0.5 + 'px';
+                sea_front.style.top = value * 0 + 'px'; 
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 0.5 + 'px';
+                text2.style.marginRight = value * 3.75 + 'px';
+                text2.style.marginTop = value * 0.5 + 'px';
+                btn.style.marginTop = value * 0 + 'px';
+                header.style.marginTop = value * 0.5 + 'px';
+
+            })
+
+        </script>
+        <footer>
+            <div class="contacts-container">
+              <h3>Police: 100</h3>
+                  <h3>Ambulance: 102</h3>
+                  <h3>Fire Department: 101</h3>
+                  <h3>Suicide Hotline: 9152987821</h3>
+            </div>
+          </footer>
+
+    </body>
+</html>
