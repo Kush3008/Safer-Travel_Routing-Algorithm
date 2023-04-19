@@ -2,12 +2,12 @@ import gmplot
 import pandas as pd
 import webbrowser
 
-apikey = 'AIzaSyC_XVkaoiYS4sfRPC4aoYcDvPADxxVeNfA'
+apikey = ''
 
 def draw_polygon():
     longitudes = []
     latitudes = []
-    area = pd.read_csv('C:\\Users\\akush\\Desktop\\Medelin\\ST0245\\code\\final-delivery\\src\\data\\poligono_de_medellin.csv', sep=';')
+    area = pd.read_csv('C:\\Users\\akush\\Desktop\\.csv', sep=';')
     polygon = str(area['geometry'].to_list()[0])[9:-2].split(',')
     for coordinates in polygon:
         long, lat = list(map(float, coordinates[1:].split(' ')))
