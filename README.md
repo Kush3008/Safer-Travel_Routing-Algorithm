@@ -29,8 +29,9 @@ Special Features:
 - Safe path finder
 
 ## Install
-- Need to add your own google maps api key
-- need to install libraries: Pandas, gmplot, numpy, matplotlib, sklearn (and any other missing libraries)
+- Need to add your own google maps api key.
+- Need to install libraries: Pandas, gmplot, numpy, matplotlib, sklearn (and any other missing libraries).
+- Please change the file paths accordingly.
 
 ## Demo
 screenshots from the project
