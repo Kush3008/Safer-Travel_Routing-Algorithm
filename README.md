@@ -59,6 +59,6 @@ screenshots from the project
 Arshdeep singh
 [(https://github.com/deeparsh7)]
 
-Sanjana Das https://avatars.githubusercontent.com/u/131029535?v=4
+Sanjana Das ![image](https://avatars.githubusercontent.com/u/131029535?v=4)
 [(https://github.com/sd2084)]
 
