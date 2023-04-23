@@ -55,5 +55,7 @@ screenshots from the project
 ![image](https://user-images.githubusercontent.com/83759659/233540834-ff77069f-d481-407d-9c26-bb666a7d29e3.png)
 
 #Contributors
+Arshdeep singh
 [(https://github.com/deeparsh7)]
+Sanjana Das
 [(https://github.com/sd2084)]
