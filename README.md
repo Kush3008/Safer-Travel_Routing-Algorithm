@@ -54,11 +54,11 @@ screenshots from the project
 ### Mobile App UI Design
 ![image](https://user-images.githubusercontent.com/83759659/233540834-ff77069f-d481-407d-9c26-bb666a7d29e3.png)
 
-#Contributors
+# Contributors
 
 Arshdeep singh
 [(https://github.com/deeparsh7)]
 
-Sanjana Das
+Sanjana Das https://avatars.githubusercontent.com/u/131029535?v=4
 [(https://github.com/sd2084)]
 
