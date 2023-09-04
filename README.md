@@ -6,6 +6,8 @@ Arshdeep singh
 Sanjana Das
 [(https://github.com/sd2084)]
 
+Live Demo : https://kush3008.github.io/SaferTravelsWeb/
+
 # Safer-Travel_Routing-Algorithm
 
 Safer Travel is a Python and machine learning (ML)-based project that aims to find the safest path between two points by leveraging crime data obtained through web scraping using BeautifulSoup. This project was developed as part of the techno hackathon organized by Ja Assure.
